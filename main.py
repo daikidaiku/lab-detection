@@ -25,8 +25,8 @@ def main():
     upload_path = os.path.join(os.getenv('PYWORKS_PATH'),"upload-lab-photo","main.py")
     upload_image = subprocess.run(["python3", upload_path], capture_output=True, text=True)
 
-# print(take_photo.stdout)
-# print(take_photo.stderr)
+    print(upload_image.stdout)
+    print(upload_image.stderr)
 
 if __name__ == "__main__":
     main()
