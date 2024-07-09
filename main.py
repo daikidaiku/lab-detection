@@ -22,7 +22,7 @@ def main():
     mobe_label_path = os.path.join(root_dir, "lib", "move_labels.py")
     move_label = subprocess.run(["python3", mobe_label_path], capture_output=True, text=True)
 
-    upload_path = os.path.join(os.getenv('PYWORKS_PATH'),"upload-lab-photo","test_image_drive.py")
+    upload_path = os.path.join(os.getenv('PYWORKS_PATH'),"upload-lab-photo","main.py")
     upload_image = subprocess.run(["python3", upload_path], capture_output=True, text=True)
 
 # print(take_photo.stdout)
