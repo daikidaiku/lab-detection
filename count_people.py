@@ -25,7 +25,7 @@ folder_path = os.getenv('LABEL_BACKUP')
 
 # 最新のファイルを取得
 latest_file = get_latest_file(folder_path)
-# print(latest_file)
+
 if latest_file:
     # 1列目が0の行の数をカウント
     zero_count = count_zero_first_column(latest_file)

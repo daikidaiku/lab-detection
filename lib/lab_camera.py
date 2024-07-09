@@ -1,5 +1,5 @@
 import cv2
-from picamera2 import Picamera2, Preview
+from picamera2 import Picamera2, Preview # type: ignore
 import os
 from dotenv import load_dotenv
 
